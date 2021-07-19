@@ -5,6 +5,6 @@
         <button (click)="toggleQuote(i)">More Details</button>
     </li>
     <div *ngIf="quote.showDescription">
-        <app-quote-detail [quote]='quote'></app-quote-detail>
+        <app-quote-detail [quote]='quote' (isComlete)='deleteQuote($event,i)'></app-quote-detail>
     </div>
 </ul>

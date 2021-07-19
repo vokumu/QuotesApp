@@ -1,11 +1,14 @@
-# Quotes
-
+# Quotes Application
+---
+## Project Description
+Quoates application is a  simple website for displaying memorables quotes their auhtors and has an interesting feature of rating a quote if its interesting or note. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
-## Development server
+## Author Information
+[Victoria Okumu](https://github.com/vokumu)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+# Setup Instructions  
+To start using this project use the following:
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -22,6 +25,22 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+# View Site
+[View site](https://vokumu.github.io/#/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Technologies Used 
+        *HTML
+        *TYPESCRIPT
+
+# Contact Information
+- Email <victoriawasonga@gmail.com>
+
+# Copyright  & License
+## Copyright
+        *AngularJs
+        *
+
+## License
+[MIT](LICENSE)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.

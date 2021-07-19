@@ -13,7 +13,7 @@ export class QuotesComponent implements OnInit {
   toggleQuote(index:number){
     this.quotes[index].showDescription=!this.quotes[index].showDescription;
   }
-  deleteQuote(isComlete: boolean,index:any){
+  deleteQuote(isComlete: any,index:any){
     if(isComlete){
       const toDelete=confirm('Are you sure you want to delete this movie?');
       if(toDelete){
