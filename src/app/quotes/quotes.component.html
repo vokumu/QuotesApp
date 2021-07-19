@@ -1,10 +1,9 @@
 <p>quotes works!</p>
-<ul *ngFor='let quote of quotes'>
+<ul *ngFor='let quote of quotes  let i=index'>
     <li>
         <span>Quote: </span>{{quote.quote}}
-        <br/><span>Author: </span> {{quote.author}}
-        <br/><span>Publisher: </span>{{quote.publisher}}
-        <br/><span>Upvote: </span>{{quote.upvote}}
-        <br/><span>DownVote: </span>{{quote.downvote}}
     </li>
+    <div *ngIf="quote.showDescription">
+        <app-quote-detail [quote]='quote'></app-quote-detail>
+    </div>
 </ul>

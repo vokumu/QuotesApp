@@ -10,6 +10,9 @@ export class QuotesComponent implements OnInit {
     new Quotes(1,"this is a quote","Victoria Okuku","Atieno")
   ]
   constructor() { }
+  toggleQuote(index:number){
+    this.quotes[index].showDescription=!this.quotes[index].showDescription;
+  }
 
   ngOnInit(): void {
   }
