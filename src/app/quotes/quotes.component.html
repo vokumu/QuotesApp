@@ -1,8 +1,10 @@
 <p>quotes works!</p>
 <ul *ngFor='let quote of quotes'>
     <li>
-        {{quote.quote}}
-        <br/> {{quote.author}}
-        <br/> {{quote.publisher}}
+        <span>Quote: </span>{{quote.quote}}
+        <br/><span>Author: </span> {{quote.author}}
+        <br/><span>Publisher: </span>{{quote.publisher}}
+        <br/><span>Upvote: </span>{{quote.upvote}}
+        <br/><span>DownVote: </span>{{quote.downvote}}
     </li>
 </ul>
