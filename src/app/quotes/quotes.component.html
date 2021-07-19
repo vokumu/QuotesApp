@@ -1,10 +1,18 @@
-<p>quotes works!</p>
-<ul *ngFor='let quote of quotes  let i=index'>
-    <li>
-        <span>Quote: </span>{{quote.quote}}
-        <button (click)="toggleQuote(i)">More Details</button>
-    </li>
-    <div *ngIf="quote.showDescription">
-        <app-quote-detail [quote]='quote' (isComlete)='deleteQuote($event,i)'></app-quote-detail>
+<div class="container">
+    <h1>My Goals</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <ul *ngFor='let quote of quotes  let i=index'>
+                <li>
+                    <span>Quote: </span>{{quote.quote}}
+                    <button (click)="toggleQuote(i)">More Details</button>
+                </li>
+                <div *ngIf="quote.showDescription">
+                    <app-quote-detail [quote]='quote' (isComlete)='deleteQuote($event,i)'></app-quote-detail>
+                </div>
+            </ul>
+        </div>
     </div>
-</ul>
+</div>

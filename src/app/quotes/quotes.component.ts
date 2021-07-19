@@ -21,6 +21,15 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+  addNewQuote(quote:Quotes){
+    const quoteLength=this.quotes.length;
+    quote.id=quoteLength+1;
+    //quote.viewDate=new Date(quote.viewDate);
+    this.quotes.push(quote);
+
+
+
+  }
   ngOnInit(): void {
   }
 
