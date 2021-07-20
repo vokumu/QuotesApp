@@ -8,10 +8,10 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
   color="#FFFF00"
   quotes:Quotes[]=[
-    new Quotes(1,"this is a quote","Victoria Okuku","Atieno",new Date(2021,7,20)),
-    new Quotes(2,"quote is me ","Victoria Okuku","Atieno",new Date(2021,7,2)),
-    new Quotes(3,"qqqq","Victoria Okuku","Atieno",new Date(2021,7,10)),
-    new Quotes(4,"Kenya Yetu","Victoria Okuku","Atieno",new Date(2021,7,3))
+    new Quotes(1,"this is a quote","Victoria Okuku","Atieno",new Date(2021,6,20)),
+    new Quotes(2,"quote is me ","Victoria Okuku","Atieno",new Date(2021,6,2)),
+    new Quotes(3,"qqqq","Victoria Okuku","Atieno",new Date(2021,6,10)),
+    new Quotes(4,"Kenya Yetu","Victoria Okuku","Atieno",new Date(2021,6,3))
   ]
   ;
   max:any;
