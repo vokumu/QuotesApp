@@ -9,9 +9,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Setup Instructions  
 To start using this project use the following:
-## Code scaffolding
+## Development server
+Run ng serve -o or ng serve --open and this will open in a browser at port 4200 by default but can also be assigned another pport if localhost:4200 is being used.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+Once you have cloned the project, you need to install the dev tools using npm install so that the project will run
 
 ## Build
 
@@ -28,9 +30,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 # View Site
 [View site](https://vokumu.github.io/#/)
 
-# Technologies Used 
+#  Technologies Used 
         *HTML
         *TYPESCRIPT
+        *JAVASCRIPT
+        *CSS
 
 # Contact Information
 - Email <victoriawasonga@gmail.com>
@@ -38,7 +42,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 # Copyright  & License
 ## Copyright
         *AngularJs
-        *
+        *Bootstrap
+
 
 ## License
 [MIT](LICENSE)
