@@ -1,7 +1,7 @@
 # Quotes Application
 ---
 ## Project Description
-Quoates application is a  simple website for displaying memorables quotes their auhtors and has an interesting feature of rating a quote if its interesting or note. 
+Quoates application is a  simple website for displaying memorables quotes their authors and has an interesting feature of rating a quote if its interesting or not. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 ## Author Information
