@@ -10,7 +10,8 @@ export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
     new Quotes(1,"this is a quote","Victoria Okuku","Atieno"),
     new Quotes(1,"quote is me ","Victoria Okuku","Atieno"),
-    new Quotes(1,"qqqq","Victoria Okuku","Atieno")
+    new Quotes(1,"qqqq","Victoria Okuku","Atieno"),
+    new Quotes(1,"Kenya Yetu","Victoria Okuku","Atieno")
   ]
   constructor() { }
   toggleQuote(index:number){
