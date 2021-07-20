@@ -1,10 +1,35 @@
-<br/><span>Author: </span> {{quote.author}}
-<br/><span>Publisher: </span>{{quote.publisher}}
-<br/><span>Upvote: </span>{{quote.upvote}}
-<br/><span>DownVote: </span>{{quote.downvote}}
-<br/><span>Date: </span>{{quote.addedDate | date}}
-<p>This Quote was added {{quote.addedDate|dateCount}} days Ago</p>
-
+<ul class="list-group mt-3">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">Author</div>
+            {{quote.author}}
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">Publisher</div>
+            {{quote.publisher}}
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">Date Created</div>
+            {{quote.addedDate|date}}
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">Upvote</div>
+            {{quote.upvote}}
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">Down Vote</div>
+            {{quote.downvote}}
+        </div>
+    </li>
+</ul>
 
 <button (click)='upVote(true)' class="btn btn-success m-2 btn-sm">Up Vote</button>
 <button (click)='downVote(true)' class="btn btn-danger m-2 btn-sm">Down Vote</button>

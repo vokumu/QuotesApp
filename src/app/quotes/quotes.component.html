@@ -12,7 +12,7 @@
                             <strong class="text-gray-dark" [appHighlight]='color'>{{quote.quote}}</strong>
                             <a href="#" (click)="toggleQuote(i)">More Details</a>
                         </div>
-                        <span>@{{quote.author}}</span>
+                        <span>@This Quote was added {{quote.addedDate|dateCount}} days Ago</span>
                         <div *ngIf="quote.showDescription" class="d-block">
                             <app-quote-detail [quote]='quote' (isComlete)='deleteQuote($event,i)' (isClicked)='downVoteQuote($event,i)' (isClick)=' upVoteQuote($event,i) '></app-quote-detail>
                         </div>
