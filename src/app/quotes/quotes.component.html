@@ -5,12 +5,12 @@
     <div class="row">
         <div class="col-md-6">
             <ul *ngFor='let quote of quotes  let i=index'>
-                <li>
+                <li [appHighlight]='color'>
                     <span>Quote: </span>{{quote.quote}}
                     <button (click)="toggleQuote(i)">More Details</button>
                 </li>
                 <div *ngIf="quote.showDescription">
-                    <app-quote-detail [quote]='quote' (isComlete)='deleteQuote($event,i)'></app-quote-detail>
+                    <app-quote-detail [quote]='quote' (isComlete)='deleteQuote($event,i)' (isClicked)='downVoteQuote($event,i)' (isClick)=' upVoteQuote($event,i) '></app-quote-detail>
                 </div>
             </ul>
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
