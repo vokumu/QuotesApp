@@ -8,12 +8,30 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
   color="#FFFF00"
   quotes:Quotes[]=[
-    new Quotes(1,"this is a quote","Victoria Okuku","Atieno"),
-    new Quotes(1,"quote is me ","Victoria Okuku","Atieno"),
-    new Quotes(1,"qqqq","Victoria Okuku","Atieno"),
-    new Quotes(1,"Kenya Yetu","Victoria Okuku","Atieno")
+    new Quotes(1,"this is a quote","Victoria Okuku","Atieno",new Date(2021,7,20)),
+    new Quotes(2,"quote is me ","Victoria Okuku","Atieno",new Date(2021,7,2)),
+    new Quotes(3,"qqqq","Victoria Okuku","Atieno",new Date(2021,7,10)),
+    new Quotes(4,"Kenya Yetu","Victoria Okuku","Atieno",new Date(2021,7,3))
   ]
-  constructor() { }
+  ;
+  max:any;
+  getMax():any{
+    this.max=0;
+    this.quotes.forEach(quote=>{
+      if(quote.id>this.max){
+        this.max=quote.id;
+      }
+    return this.max;
+    });
+  }
+  maximum=this.getMax();
+  constructor() { 
+    
+  }
+  getHighest(index: any){
+    Math.max(this.quotes[index].id);
+
+  }
   toggleQuote(index:number){
     this.quotes[index].showDescription=!this.quotes[index].showDescription;
   }

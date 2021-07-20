@@ -2,6 +2,7 @@
 <br/><span>Publisher: </span>{{quote.publisher}}
 <br/><span>Upvote: </span>{{quote.upvote}}
 <br/><span>DownVote: </span>{{quote.downvote}}
+<br/><span>Date: </span>{{quote.addedDate | date}}
 
 <button (click)='quoteDelete(true)'>Delete Quote</button>
 <button (click)='downVote(true)'>Down Vote Quote</button>
