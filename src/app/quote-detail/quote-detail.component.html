@@ -5,6 +5,8 @@
 <br/><span>Date: </span>{{quote.addedDate | date}}
 <p>This Quote was added {{quote.addedDate|dateCount}} days Ago</p>
 
-<button (click)='quoteDelete(true)'>Delete Quote</button>
-<button (click)='downVote(true)'>Down Vote Quote</button>
-<button (click)='upVote(true)'>Up Vote Quote</button>
+
+<button (click)='upVote(true)' class="btn btn-success m-2 btn-sm">Up Vote</button>
+<button (click)='downVote(true)' class="btn btn-danger m-2 btn-sm">Down Vote</button>
+<br/>
+<button (click)='quoteDelete(true)' class="btn btn-outline-danger my-3 text-center btn-lg">Delete Quote</button>
